@@ -1,0 +1,8 @@
+iw Basics:
+	http://wireless.kernel.org/en/users/Documentation/iw
+
+iw virtual interfaces
+	http://wireless.kernel.org/en/users/Documentation/iw/vif/
+
+Monitoring
+	iw can scan for APs (iw dev wlan0 scan) in order to see the frequency each device is on. Then setup a virtual device or set a device such as 			wlan0 into monitoring mode for a particular frequency.
