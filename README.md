@@ -1,0 +1,1 @@
+This project will be conducted by a small group within the Abilene Christian University community. It aims to setup a mesh network, using the batman-adv protocol, at ACU primarily for research, but potentially could connect students and faculty that are interested in mesh networking for creative purposes.
