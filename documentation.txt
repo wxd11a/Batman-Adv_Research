@@ -1,0 +1,4 @@
+Compatibility:
+	Broadcomm:
+		BCM43224:
+			This card primarily only works with the 'wl' driver, but has some functionality with the open source 'b43' driver. This limitation restricts the card from entering the 'mesh mode' but can still be setup to enter 'managed' and 'IBSS' modes. 'IBSS' mode can be used for connecting to mesh networks.
