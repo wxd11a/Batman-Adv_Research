@@ -2,3 +2,19 @@ Compatibility:
 	Broadcomm:
 		BCM43224:
 			This card primarily only works with the 'wl' driver, but has some functionality with the open source 'b43' driver. This limitation restricts the card from entering the 'mesh mode' but can still be setup to enter 'managed' and 'IBSS' modes. 'IBSS' mode can be used for connecting to mesh networks.
+
+
+Things to test:
+	Possible goals:
+		MTU
+			Should the MTU node be kept at 1532?
+			Currently default MTU is 1500, but the 32 is an added header. Since the MTU is changing on these nodes, should we simply append this additional header to the MTU or is there a more effective number? How might this change affect sparse networks vs congested networks?
+		Originator Messages (OGMs)
+			How often should OGMs be set relative to the network size? How might this change in an environment with primarily static nodes vs. an environment with constantly mobile nodes?
+		Bridge-loop avoidance
+			Currently bridge-loop avoidance is in its second version, but how may it be improved on.
+			(Please refer to batman-adv documentation as to how bridge-loop avoidance II handles this problem.)
+		Network Coding
+			This is a huge project to tackle, and I don't think it would be reasonable to try to come up with a solution to this with the limited time we have.
+
+These are just some of the things we could work on testing, but other issues such as how to incorporate non-mesh clients into the mesh (http://www.open-mesh.org/projects/batman-adv/wiki/Client-announcement) or even power management may be addressed as well.
