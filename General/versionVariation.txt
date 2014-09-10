@@ -1,0 +1,5 @@
+Compatibility:
+	Batman-adv 2014.0.0+ is not compatible with previous verisons // need to check this
+
+Multicast changes:
+	As of 2014.2.0 multicast is handled differently so that it doesn't constantly flood the network. This change challenges "Characterizing the Multimedia Service Capacity of Wirelss Mesh Netowkrs for Rural Communities" study regarding IPTV and batman-adv's use of it. IPTV may now be usable due to these changes.
