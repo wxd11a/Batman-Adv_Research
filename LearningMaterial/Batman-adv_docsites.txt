@@ -1,2 +1,4 @@
 WirelessPT:
 	http://wirelesspt.net/wiki/Batman-adv
+	http://wirelesspt.net/arquivos/documentos/batman-adv/
+	http://wirelesspt.net/wiki/Testando_e_validando_Batman-adv # testing batman-adv with unknown version (will be pre-2014)
