@@ -1,0 +1,46 @@
+Here is an insightful post by 'domingo' on http://forum.wirelesspt.net/viewtopic.php?f=8&t=760 about the troubles he had in understanding
+	batman-adv when switching to OLSR, and his explaination on how to understand the protocol better. He describes scenarios that
+	differenciate between layer3 and layer2 mesh protocols.
+
+// domingo START
+I believe that this problem is a case of misunderstanding what batman-adv actually does and how it works. This type of misunderstanding happens when people are introduced to batman-adv. Let me put it this way. I was using wds and adhoc with olsr as many of us still do, when i moved to batman-adv to find out that one of the advantages of batman-adv is what we call zeroconfig. In other words is the ability of setting up a mesh network without having to configure any software parameters whatsoever after the firmware is installed in a router. Thats right no configuration at all. But first lets make a distinction here about a few important details here.
+
+Back to basics:
+Scenario 1 (layer3)
+
+I take it that you are familiar with OLSR. On a OLSR mesh; one sets up the router interfaces in adhoc mode; gives the interface a net range, ip address and then the router is ready to work. All the clients, of that routing node whether they are routing devices or people will connect to the node in adhoc mode. Packets are forward on layer 3 as well as routing and through adhoc.
+
+In your raspberry, a proper configuration would give you one wireless interface which would work in adhoc mode. Clients (people) and client nodes will use the same ssid, network setup and share everything in common with the routing node. One of the disadvantages of this type of setup is that everyone will be connecting through adhoc and every one will use the same channel, same radio and so on reducing and limiting many more functional aspects of the mesh.
+
+In this typical scenario your routing device has only one wireless radio that will bare all the network activity and in order to maximize your network potential, increase security and functionality you will move to scenario 2.
+
+Scenario 2 (layer3)
+Every thing as described above stays with only one change. You will now use 2 routing devices.
+One routing device will work only in adhoc mode + OLSR and will have it's specific network mask, range and broadcast, ssid, channel, etc. This routing device will work only to build the mesh backbone and all the mesh links and only mesh nodes will connect to it to carry the mesh traffic/packets. (not people)
+The second routing device will be used ONLY by people to connect to the network and it will have it's own different ip range; may be or may not be in the same network, will have a different ssid and channel.
+Why do you want this ? To maximize functionality at all levels and we can talk about it later but note that having a second routing device is not mandatory but it is a better setup in all possible ways.
+
+Now .. while we are still on layer 3 the second routing device does not need to be a physical device as long as the first routing device is capable of either of VAP (virtual ap) which will allow it's radio chipset to create a new ssid using the same radio or the routing device will have 2 separate radios.
+
+One radio creates the mesh backbone at only for routing devices and the other radio is the AP ssid that will be used by people.
+
+Still in these scenarios you can have both the backbone and the AP in the same network range; divide the subnet or have 2 different ones bridged to each other.
+The routing is always done in adhoc and it is OLSR that choses the routes to use. All this works on layer 3. Adhoc by itself will not know what to do to forward the packets the best way and that is why we need a routing protocol and at layer 3 you will need to specify a net range for adhoc to work properly.
+
+Scenario 3 (layer 2)
+If you are using one routing device only with one radio only you will have to create the adhoc network but you i will not need to give the adhoc network any network range or specifications. Nothing is needed accept adding batman-adv on top of it to figure out what is the best way to forward packets and this is all done at level 2.
+Unlike adhoc+olsr or adhoc+batmanD; you will not need to configure the network specifics but only to add bat0 to the lan/eth0.
+
+http://wirelesspt.net/wiki/Configurar_O ... v_2012.3.0
+
+You will then connect to eth0 (wire) or wlan0 (wireless) while bat0 is taking care of the routing using adhoc and the routing is done by batman-adv which will forward the packets the way it thinks it is best according to pre-set specifications and internal functioning.
+
+Scenario 4 (layer 2)
+You can add a second routing device just like the examples for layer 3 and in case you wish to have people connecting to the mesh; they will use the AP routing device which gets their packets forwarded by the adhoc routing device running batman-adv.
+
+If your routing device has 2 radios or allows you to create a vap, then the same applies to the layer 3 example and in this case the only thing you need to do is to enslave the batman-adv interface to your layer 3 configuration without having to do anything else.
+
+Batman-adv does not need to be configured like layer 3 protocols but will by itself manage the routing path and forward traffic as it thinks it's best based on a few rules you can specify for bat-adv to follow.
+You will always work on level 3 to transmit data through the nodes but if you want to manipulate, routes, packets and traffic at layer 2 you can for example use ebtables to do so just like you would use iptables for layer 3.
+
+// domingo END

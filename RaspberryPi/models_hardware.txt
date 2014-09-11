@@ -1,0 +1,18 @@
+Rasberry Pi models
+	B/B+
+		These would prove the best for our research since they both provide ethernet ports for if we needed wired connections.
+		The B+ model would be safer for testing due to some low power issues with the USB connections on the model B.
+			People have reported wireless adapters not working due to their usb not being able to provide the needed power.
+
+USB_WiFi-Adapter list
+	http://elinux.org/RPi_USB_Wi-Fi_Adapters
+
+WiFi notes
+	It would be best to stick with the Atheros chip set due to its openess and community support. Prefer to also stay with
+		the ath9k series chips as well.
+
+Operating System
+	As of 2014/09/11 it looks like Debian or a Debian variant (Raspbian) would be the safest bet. OpenWRT supports models B, but not B+.
+
+	Batman-adv 2014.3.0 supports the Linux kernel versions 2.6.29-3.16.
+	
