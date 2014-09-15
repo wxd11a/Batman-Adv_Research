@@ -1,0 +1,26 @@
+Mesh Networking Companies in China:
+	Ubiquiti - http://www.ubnt.com/ - They are a company that is popular within the networking community for their WISP (Wireless Internet Service Provider) equiptment and software. They have also been popular within mesh communities for the quality of their hardware.
+		If you're interested in their popularity in China here is one example of their equiptment being used by a WISP: https://community.ubnt.com/t5/airMAX-Stories/airMAX-helps-WISP-growing-in-China/cns-p/873310
+		There are plenty examples of their growth in China: https://www.google.com/#safe=off&q=ubiquiti+china
+
+	There are a few WISPs (Wireless Internet Service Providers) that I've looked up in China, but I haven't spent enough time looking at any particular for positions quite yet.
+
+
+Mesh Networking Projects:
+	http://www.servalproject.org/ - Uses mesh networking to connect people using VOIP (voice over IP) so that people don't need a phone company to make a call
+
+	http://villagetelco.org/ - Similar to the Serval project, but incorporates a separate device that increases the range and stabilizes the network.
+
+Other Examples of Mesh Networking:
+	Google is using mesh to connect devices in home networks - http://www.eweek.com/cloud/why-google-is-working-on-home-mesh-networking.html
+
+	Mesh networks are used in disaster relief situations - http://www.bbc.com/news/technology-27225869
+
+
+
+What I'm looking for:
+	I would love to work for a company that is implementing mesh networking to communities in China so that they are able to communicate within their community in a more effective manner. This job would ideally allow me to travel across China setting up, and connecting, each community to one another.
+
+More realistic goal:
+	To find a company in China that either builds mesh networks or WISPs (Wireless ISPs).
+
