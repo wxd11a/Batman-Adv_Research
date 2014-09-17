@@ -1,0 +1,7 @@
+This page is merely speculation and has no real foundation for any claims. Abstract creativity can be fun.
+
+Advertising purposes:
+	Through the use of VLANs different mesh groups can be targeted by both location and interest depending on if mesh communities virtualize groups
+
+IPTV:
+	Through the use of VLANs mesh groups can be identified by location and interest.
