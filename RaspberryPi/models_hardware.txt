@@ -16,3 +16,6 @@ Operating System
 
 	Batman-adv 2014.3.0 supports the Linux kernel versions 2.6.29-3.16.
 	
+
+NEEDED:
+	Buy a power adapter. (Hao has a 5V microusb adapter)

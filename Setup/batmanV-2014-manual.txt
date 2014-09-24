@@ -1,5 +1,6 @@
 Debian:
-
+	Odd notes:
+	(batman-adv 2014.2.0, linux-kernel 3.12)	dmesg | grep batman-adv said that the MTU size of 1532 was too small and to set it to 1560 so that packets would not be fragmented. This might be fixed in kernel version 3.16 with the noted fragmentation fixes.
 
 OpenWRT:
 
