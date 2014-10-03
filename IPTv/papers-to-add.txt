@@ -1,0 +1,14 @@
+J. Zhang et al., “The Impact of Stochastic Noisy
+Feedback on Distributed Network Utility Maximization, “
+IEEE Transactions on Information Theory, vol. 54, no. 2,
+2008, pp.231-244 .
+
+B. Park et al., “QoS-Driven Wireless Broadband
+Home Networking Based on Multihop Wireless Mesh
+Networks,” IEEE Transactions on Consumer Electronics,
+vol.52, no.4, pp.1224-1238, 2006.
+
+A. Asaduzzaman and H.Y.Kong, “Muti-Relay
+Cooperative Diversity Protocol with Improved Spectral
+Efficiency,” Journal of Communications and Networks,
+vol. 13, no.3, 2011, pp. 679-688.

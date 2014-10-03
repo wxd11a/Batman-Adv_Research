@@ -7,3 +7,23 @@
 
 "Since 802.11-based multi-hop wireless networks implement Distributed Coordination Function (DCF) for medium access, an end-to-end route may contain several relay nodes contending for the channel resulting [in] degradation of video quality due to increased end-to-end delay and packet probability. All of these problems have prevented the implementation of indoor cabling by 802.11 links until now. (The Convergence Scheme on Network Utility Maximization in Wireless Multicast Networks)"
 	- This is simply a listing of part of the current problem.
+
+"To overcome incrased number of packet losses and delay jitter, both of which are especially harmful for video, the authors presented enhanced distributed channel access 802.11 (EDCA) to provide quality of service via different priority traffic classes with different contention window size and arbitration inter-frame space (AIFs) values.(The Convergence Scheme on Network Utility Maximization in Wireless Multicast Networks)"
+	- This seems more like a hack which will lead to prioritizing traffic based on the type of traffic. This undermines the notion
+		that all traffic types are equal. I don't think doing this at the network level would be best since ultimately it should
+		be up to the end user the priority of their traffic.
+
+# About rate controllers in multicast networks
+"A rate controller is located at the rout[e] of eveyr router node. The outgoing links of a router is towards its downstream routers. The basic idea of flow control is as follows: Initially, the source sends data including a forward control packet (FCP) to the destinations along hte route. At each router node, it computes an expected incoming data rate according to its local buffer occupancy, and construes a backward control packet (BCP) by filling this expected rate in the BCP. (The Convergence Scheme on Network Utility Maximization in Wireless Multicast Networks)"
+
+# OPSD (Optimal Proportional plus Second-order Differential) control scheme
+	- Conclusion: "[Addresses] the problem of slow transient response due to the long feedback time in wireless multicast networks. Delayed
+		congestion feedback can cause excessive queue buildup and packet loss at bottleneck links especially in multicast. We proposed a
+		novel Optimal Proportional plus Second-order Differential (OPSD) control which has [the] capability to diminish oscillations in
+		distributed wireless mesh networks via 802.11. The merit of our distribution algorithms is that they can achieve the optimums
+		quickly. As evident from the analyses and simulation results, the proposed control scheme can improve the network performance.
+		(The Convergence Scheme on Network Utility Maximization in Wireless Multicast Networks)"
+
+Testing - http://www.tek.com/learning/video-test-tutorial
+		- possibly some good guides on testing IPTV; still need to check.
+		- requires signup... so possibly not
