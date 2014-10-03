@@ -1,0 +1,6 @@
+IPTV tutorials (links) (Will)
+technical papers (Alfa)
+Raspberry pie
+	versions
+	builds
+Trouble-shooting on IBSS and OpenWRT

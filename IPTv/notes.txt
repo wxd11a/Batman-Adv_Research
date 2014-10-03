@@ -1,0 +1,9 @@
+"For an I frame, with intra-frame encoding, its image frame consists of blocks converted to a set of coefficients using discrete cosine transform(DCT). A group of blocks form a slice carried within one packet. If th efirst block is damaged, the whole group may be lost, which creates a strip in the image. (Internet Protocol Television (IPTV): The Killer Application for the Next-Generation Internet)"
+	- I-frame is a type of video encoding that is the "least compressible but don't require other video frames to decode."
+		This is compared to the P-frame and B-frame compression.
+	- While an upstream node in a mesh network could still have this problem, if a node closer to the destination drops any frames
+		then mesh networking may provide to be a solution.
+	- What about mesh networks comprised of CDNs?
+
+"Since 802.11-based multi-hop wireless networks implement Distributed Coordination Function (DCF) for medium access, an end-to-end route may contain several relay nodes contending for the channel resulting [in] degradation of video quality due to increased end-to-end delay and packet probability. All of these problems have prevented the implementation of indoor cabling by 802.11 links until now. (The Convergence Scheme on Network Utility Maximization in Wireless Multicast Networks)"
+	- This is simply a listing of part of the current problem.
