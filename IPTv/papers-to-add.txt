@@ -1,8 +1,10 @@
+(printed)
 J. Zhang et al., “The Impact of Stochastic Noisy
 Feedback on Distributed Network Utility Maximization, “
 IEEE Transactions on Information Theory, vol. 54, no. 2,
 2008, pp.231-244 .
 
+(printed)
 B. Park et al., “QoS-Driven Wireless Broadband
 Home Networking Based on Multihop Wireless Mesh
 Networks,” IEEE Transactions on Consumer Electronics,
