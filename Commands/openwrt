@@ -1,0 +1,10 @@
+wifi:
+	resets the wireless interfaces as defined by /etc/config/wireless
+
+iw:
+	:list
+		Get the device capabilities for all devices, such as band information (2.4 GHz and 5 GHz), and 80211n information
+
+iwinfo:
+	:<interface> info
+		Lists interface information
