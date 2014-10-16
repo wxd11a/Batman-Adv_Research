@@ -15,3 +15,6 @@ Come up with a good analogy of mesh networks
 	- Highways are ISPs and mesh networks are the access roads and communal roads
 	- If there is a wreck on the highway then you should be able to exit and return on the highway
 	- If you want to go to a neighbor's house you shouldn't have to get on the highway.
+
+Drivers:
+	Figure out if wireless interfaces naming conventions are dependent upon the driver being used. This came up due to an Aircrack-ng tutorial using different naming conventions for different drivers.
