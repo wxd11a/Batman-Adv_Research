@@ -10,4 +10,7 @@ OpenWRT:
 			within /etc/config/network. The interface it is pointing at is defined by the 'option network INTERFACE' variable.
 			The default for the variable is 'lan' which (once again) is pointing to the /etc/config/network file.
 		- Change the /etc/config/network interface used...
+	Odd Notes:
+		- In /etc/config/wireless using quotes around the option type (ex. option 'encryption') does not work despite it being listed
+			on the OpenWRT site.
 
