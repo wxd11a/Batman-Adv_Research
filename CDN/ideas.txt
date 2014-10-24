@@ -1,0 +1,14 @@
+1. Major findings of the CDN paper
+2. Generalization of CDN to multi-node content network in the last mile
+	-> cache memory - size, speed, etc.
+	-> cache coordination
+		- protocols for that algorithmn
+		- how far from the leaf nodes (the consumers)
+		- rate of message exchange
+	-> impact of routing protocol
+		- there positives and negatives to this method. A branch of the network could be responsible for a particular set of data.
+		- SECURITY ISSUES 
+			- possible solutions
+				- public key infrastructure within the mesh network itself. localized key exchange so we know that the node
+					is part of the mesh.
+	-> layered architecture violations
