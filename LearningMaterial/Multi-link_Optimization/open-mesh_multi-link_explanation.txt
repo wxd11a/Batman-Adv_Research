@@ -1,0 +1,30 @@
+# Douglas, this page is a write up near verbatim for the purpose of organizing, learning, and commenting. Anecdotal information will be included within either comments (#) or brackets []
+# http://www.open-mesh.org/projects/batman-adv/wiki/Network-wide-multi-link-optimization
+
+Network Wide Multi-Link Optimization:
+	The original batman-adv multi link optimization works on a local level - which is fairly easy to implement and works well as long as all nodes are configured the same way and have similar link qualities. But local decision may be suboptimal network wide - for example, consider some dual radio mesh nodes where the first node starts on 5 GHz, but after some hops (alternating between 2.4 and 5 GHz) it stops at a 2.4 GHz-only device. If it has chosen the other (2.4 GHz) link in the first hop, choosing the same frequency twice could have been avoided, and the total path quality would be better. This limitation can be solved by relaying the information about multi-interfaces over the whole mesh. This requires some changes to routing and forwarding, which are to be described here.
+
+Routing Table Per Interface:
+	The main idea is to use n+1 routing tables instead of just one, with n being the number of configured interfaces:
+		- a routing table per incoming interface
+		- an additional 'default' routing table for packets generated locally (e.g. from the soft-interface)
+	The routing table is chosen based on the interface the packet entered the system by.
+
+OGM forwarding and penalties:
+	To propagate different paths, the OGM forwarding is changed:
+		- When there are multiple interfaces and an OGM is forwarded on the same interface, an additional penalty (e.g. "half duplex penalty") when re-forwarding the OGM on the same interface (the metric with the applied penalty is stored locally)
+		- Apply the strict "forward only from best neighbor" per interface
+
+Path Metric computation:
+	Each node, creates and sends its own OGMs to let all the other peers in the network build their routing table
+		- On each interface, one OGM is sent as [a] broadcast containing the initial metric value
+		- A generic node receiving an OGM from a neighbor on interface I. When forwarding, it will consider the output interface O:
+			- perform the usual BATMAN metric computations, including accepting OGMs only from the best neighbor
+			- compare incoming interface I and outgoing interface O, and apply special rules [Douglas, what are these rules?]
+				based on that (e.g. a penalty if I and O are the same, and the interface is a wifi interface)
+			- mark the computed metric in a special originator table for the interface O
+			- forward the OGM with this computed metric only on interface O
+		- All metric computations above are also performed for a virtual 'default' interface O, which is used for local traffic.
+
+Trafic forwarding:
+# Douglas, TODO
