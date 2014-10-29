@@ -18,3 +18,8 @@ Come up with a good analogy of mesh networks
 
 Drivers:
 	Figure out if wireless interfaces naming conventions are dependent upon the driver being used. This came up due to an Aircrack-ng tutorial using different naming conventions for different drivers.
+
+LOOKUP:
+	- Figure out which basic services IPv6 uses multicast for.
+	- Figure out when the special rules are applied for Multi-link Optimizations 
+		("compare incoming interface I and outgoing interface O, and apply special rules"
