@@ -1,0 +1,9 @@
+The cache-and-forward network architecture for efficient mobile content delivery services in the future internet - 
+http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4542289&abstractAccess=no&userType=inst
+
+Dynamic Replica Placement for Scalable Content Delivery - http://link.springer.com/chapter/10.1007/3-540-45748-8_29
+	Abstrct: In this paper, we propose the dissemination tree, a dynamic content distribution system built on top of a peer-to-peer location
+		service. We present a replica placement protocol that builds the tree while meeting QoS and server capacity constraints. The
+		number of replicas as well as the delay and bandwidth consumption for update propagatio are significantly reduced. Simulation
+		results show that the disseminatio tree has close to the optimal number of replicas, good load distribution, small delay
+		and bandwidth penalties for update multicast compared with the ideal case: static replica placement on IP multicast.
