@@ -28,3 +28,4 @@ Path Metric computation:
 
 Trafic forwarding:
 # Douglas, TODO
+# Finished the rest of the documentation listed on the site
