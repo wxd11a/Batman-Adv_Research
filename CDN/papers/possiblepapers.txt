@@ -7,3 +7,11 @@ Dynamic Replica Placement for Scalable Content Delivery - http://link.springer.c
 		number of replicas as well as the delay and bandwidth consumption for update propagatio are significantly reduced. Simulation
 		results show that the disseminatio tree has close to the optimal number of replicas, good load distribution, small delay
 		and bandwidth penalties for update multicast compared with the ideal case: static replica placement on IP multicast.
+
+Mitigating the gateway bottleneck via transparent cooperative caching in wireless mesh networks - 
+http://www.sciencedirect.com/science/article/pii/S1570870506001028
+Abstract:
+Wireless mesh networks (WMNs) have been proposed to provide cheap, easily deployable and robust Internet access. THe dominant Internet-access traffic from clients causes a congestion bottleneck around the gateway, which can significantly limit the throughput of the WMN clients in accessing the Internet. In this paper, we present MeshCache, a transparent caching system for WMNs that exploits the locality in client Internet-access traffic to mitigate the bottleneck effect at the gateway, thereby improving client-perceived performance. MeshCache leverages the fact that a WMN typically spans a small geographic area and hence mesh routers are easily over-provisioned with CPU, memory, and disk storage, and extends the individual wireless mesh routers in a WMN with built-in content caching functionality. It then performs cooperative caching among the wireless mesh routers . . . [follow the link to read the rest of the abstract which provides more detail]
+
+Cooperative Caching in Wireless P2P Networks: Design, Implementation, and Evaluation - 
+http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4803835&tag=1
